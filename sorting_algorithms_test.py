@@ -33,3 +33,5 @@ print(quick_sort(lst2))
 
 a = 20
 
+b = 40
+
