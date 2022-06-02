@@ -13,11 +13,13 @@ lst = [0, 1, 33, 6, -2, 1, 0]
 
 print(buble_sort(lst))
 
+import random
+
 def quick_sort(unsorted_list):
     if len(unsorted_list) <= 1:
         return unsorted_list
 
-    elem = unsorted_list[0]
+    elem = random.choice(unsorted_list)
 
     left = list(filter(lambda x: x < elem, unsorted_list))
     right = list(filter(lambda x: x > elem, unsorted_list))
