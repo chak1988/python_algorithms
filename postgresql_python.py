@@ -65,3 +65,4 @@ if __name__ == '__main__':
 #
 # print((cursor.fetchone()))
 # print([x for x in cursor])
+#pip install psycopg2-binary
