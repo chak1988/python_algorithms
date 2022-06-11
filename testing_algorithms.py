@@ -5,7 +5,7 @@ def func_2(nums):
     return [i for i, el in enumerate(nums) if el % 2 == 0]
 
 
-print(func_2([20, 30, 40, 2, 4, 1, 0, 7]))
+print(func_2([20, 31, 40, 2, 4, 1, 0, 7]))
 
 
 def recursive_reverse(number):
@@ -52,3 +52,14 @@ def func_3():
     return f"Чаще всего встречается число {numb}, оно появилось в массиве {array.count(numb)} раз(а)"
 
 print(func_3())
+
+def insertion(lst):
+    for i in range(len(lst)):
+        v = lst[i]
+        j = i
+        while lst[j - 1] > v and j > 0 :
+            lst[j] = lst[j - 1]
+            j = j -1
+        lst[j] = v
+    return lst
+print(insertion([6,71,2,3,4]))

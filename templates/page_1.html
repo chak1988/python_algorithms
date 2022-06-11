@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <title>PostgreSQL</title>
 
-    {% for product in data_set %}
-<p><h4>Category: <a href="{{product}}">{{product}}</a></h4></p>
+    {% for name in person %}
+<p><h4>Category: <a href="{{name}}">{{name}}</a></h4></p>
+    <p>age is : {{person[name]}}</p>
 <br>
 {% endfor %}
 </head>

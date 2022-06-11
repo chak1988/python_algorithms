@@ -38,3 +38,15 @@ b2 = 60
 c2 = 70
 d2 =00
 
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+lst_name = {'Anton': 33, 'Julia': 38, 'Ivan' : 7}
+
+@app.route('/hello')
+def hello():
+    return render_template('page_1.html', person = lst_name)
+
+if __name__=='__main__':
+    app.run(debug = True, port = 5000)
