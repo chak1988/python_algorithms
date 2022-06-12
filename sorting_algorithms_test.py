@@ -49,4 +49,4 @@ def hello():
     return render_template('page_1.html', person = lst_name)
 
 if __name__=='__main__':
-    app.run(debug = True, port = 8800)
+    app.run(debug = True, port = 8880)
